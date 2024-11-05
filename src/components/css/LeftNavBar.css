@@ -1,0 +1,57 @@
+.left-nav-bar {
+    width: 200px; /* Set the width of the navigation bar */
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Padding around the items */
+    border-right: 1px solid #ccc; /* Right border */
+    position: fixed; /* Fix position to the left side */
+    height: calc(100% - 60px); /* Full height minus the TopNavBar height */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the view */
+    top: 40px; /* Position below the TopNavBar */
+}
+
+.left-nav-bar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.left-nav-bar li {
+    margin-bottom: 15px; /* Space between links */
+}
+
+.left-nav-bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+}
+
+.left-nav-bar a:hover {
+    color: #f44336; /* Color on hover */
+}
+
+.left-nav-bar .active {
+    font-weight: bold; /* Bold active link */
+    color: #f44336; /* Active link color */
+}
+
+.logout-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #f44336; /* Red color for logout */
+    cursor: pointer; /* Pointer cursor */
+    text-align: left; /* Align text to the left */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.logout-button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.logout-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.logout-link:hover {
+    color: #f44336; /* Color on hover */
+}

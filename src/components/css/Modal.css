@@ -1,0 +1,91 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Full coverage for background */
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 1000;
+}
+
+.modal-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners for card effect */
+    width: 80%; /* Increase width of the modal */
+    max-width: 800px; /* Set a larger max width for larger screens */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow for card look */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    max-height: 90%; /* Increase max height for more content space */
+    overflow-y: hidden; /* Remove scroll for overflow content */
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px; /* Larger font for title */
+    color: #007bff; /* Header color */
+    text-align: center;
+    border-bottom: 2px solid #007bff; /* Underline for header */
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex; /* Align label and input in the same row */
+    justify-content: space-between; /* Space them evenly */
+    margin: 10px 0; /* Space between rows */
+}
+
+label {
+    margin-right: 10px; /* Space between label and input */
+    flex: 0 0 30%; /* Give label a fixed width */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    flex: 1; /* Allow input to take the remaining space */
+}
+
+input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px; /* Consistent padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+button[type="button"] {
+    background-color: #f44336; /* Red for delete */
+    color: white;
+}
+
+button[type="button"]:hover {
+    background-color: #c62828; /* Darker red on hover */
+}

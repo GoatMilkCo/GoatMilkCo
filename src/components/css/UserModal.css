@@ -1,0 +1,115 @@
+.user-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-modal-content {
+    background-color: #f7f7f7; /* Light background for the ID card look */
+    border: 2px solid #007bff; /* Border color for ID card */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 70%; /* Width of the ID card */
+    max-width: 90%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #007bff; /* Header color */
+    text-align: center;
+    border-bottom: 2px solid #007bff; /* Underline for header */
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased space between input fields */
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 600;
+    color: #333; /* Darker color for the labels */
+}
+
+/* More specific input styles */
+.user-modal-content input[type="text"],
+.user-modal-content input[type="email"],
+.user-modal-content input[type="password"] {
+    padding: 10px; /* Increased padding for better usability */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.user-modal-content input[type="text"]:focus,
+.user-modal-content input[type="email"]:focus,
+.user-modal-content input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.admin-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.user-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px; /* Uniform padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #f44336; /* Red for delete */
+    color: white;
+}
+
+button[type="button"]:hover {
+    background-color: #c62828;
+}
+
+.user-modal-buttons button + button {
+    margin-left: 10px; /* Add spacing between buttons */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,96 @@
+.home {
+    padding-top: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 1.5rem; /* Increased font size for visibility */
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2rem; /* Increased font size for headings */
+    margin: 20px 0; /* Adjusted margin for better spacing */
+}
+
+p {
+    font-size: 0.9rem; /* Increased font size for better readability */
+    color: #555;
+    margin: 5px 0; /* Adjusted margin for better spacing */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px; /* Increased gap for better spacing */
+    padding: 8px;
+    justify-items: center;
+}
+
+.grid-item {
+    width: 180px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.grid-item:hover {
+    transform: scale(1.03);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto; /* Changed to auto to maintain aspect ratio */
+    max-height: 120px; /* Ensured the image doesn't exceed this height */
+    object-fit: cover; /* Maintains aspect ratio while filling */
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 1rem; /* Adjusted font size for product names */
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 0.9rem; /* Adjusted font size for prices */
+    color: #333;
+}
+
+.discount-price {
+    font-size: 0.8rem;
+    color: red; /* Highlight discount prices */
+    text-decoration: line-through; /* Original price style */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px; /* Increased padding for better button appearance */
+    font-size: 0.9rem; /* Increased font size */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+section {
+    margin-bottom: 15px;
+    padding: 10px; /* Padding inside the section */
+    border: 1px solid #ddd; /* Border around each section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Section background color */
+}

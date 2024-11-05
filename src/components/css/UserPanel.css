@@ -1,0 +1,101 @@
+.admin-panel {
+    display: flex;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+li {
+    text-decoration: none; /* Remove underline */
+}
+
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.user-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.edit-link {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-link:hover {
+    color: #333;
+}

@@ -1,0 +1,110 @@
+.admin-panel {
+    display: flex;
+}
+
+.content {
+    margin-left: 240px; /* Increased margin for more space */
+    padding: 20px; /* Padding for content */
+    flex-grow: 1; /* Allow content to grow */
+}
+
+h1, h2 {
+    text-align: center; /* Center-aligns text */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+
+.logout-button {
+    position: absolute; /* Allows positioning in the top right corner */
+    top: 20px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #f44336; /* Red background color */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.logout-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: transparent; /* Button background color */
+    color: red; /* Button text color */
+    font-weight: bold;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: black; /* Darker background on hover */
+}
+
+.table-container {
+    display: flex; /* Enables horizontal alignment for the tables */
+    justify-content: space-between; /* Adjusts space between tables */
+    width: 100%; /* Ensures the containers take full width */
+    max-width: 1200px; /* Optional: sets a maximum width for the tables */
+}
+
+.table {
+    flex: 1; /* Allows the tables to grow and fill the space equally */
+    margin-right: 20px; /* Adds some space between the two containers */
+    padding: 0; /* Remove padding for a cleaner look */
+}
+
+.table:last-child {
+    margin-right: 0; /* Removes the margin from the last table */
+}
+
+table {
+    width: 100%; /* Makes the table take full width of the container */
+    border-collapse: collapse; /* Collapses table borders */
+}
+
+user-table {
+    width: 100%; /* Makes the table take full width of the container */
+    border-collapse: collapse; /* Collapses table borders */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Table border */
+    padding: 8px; /* Cell padding */
+    text-align: left; /* Left-aligns text */
+    font-size: 14px; /* Smaller font size for cleaner appearance */
+}
+
+.table td a {
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.table td a:hover {
+    color: red; /* Change text color to red on hover */
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray background for headers */   
+}
+
+td {
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Display ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    max-width: 150px; /* Set a maximum width for the IPFS hash column */
+}
+
+.edit-link {
+    color: red; /* Bootstrap primary color */
+    font-weight: bold;
+    text-decoration: none; /* Underline to indicate a link */
+    cursor: pointer; /* Pointer cursor for links */
+}
+
+.edit-link:hover {
+    color: black; /* Darker color on hover */
+}

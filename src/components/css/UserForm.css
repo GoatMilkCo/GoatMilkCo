@@ -1,0 +1,41 @@
+.user-form-container {
+    display: flex; /* Use flexbox for layout */
+}
+
+.form-content {
+    margin-left: 220px; /* Leave space for the left navigation bar */
+    padding: 20px; /* Padding for the form */
+    flex-grow: 1; /* Allow content to grow */
+}
+
+h2 {
+    text-align: center; /* Center-align the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack input fields vertically */
+    align-items: center; /* Center align the inputs */
+}
+
+input {
+    margin: 10px 0; /* Space between input fields */
+    padding: 10px; /* Padding for inputs */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit maximum width */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #f44336; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

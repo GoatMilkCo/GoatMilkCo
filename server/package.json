@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "ipfs-http-client": "^60.0.1"
+  }
+}

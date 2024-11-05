@@ -1,0 +1,27 @@
+.product-modal-content {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    flex: 1; /* Allow the image section to take up more space */
+}
+
+.product-image img {
+    margin-left: 25%;
+    width: 300px; /* Make the image responsive to its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit the height if necessary */
+}
+
+.product-details {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-right: calc(10%); /* Move the details to the left by 5% */
+    max-width: 300px; /* Limit the width of the details section */
+}
+
+.product-details label {
+    margin: 10px 0;
+}

@@ -1,0 +1,80 @@
+.product-form-container {
+    display: flex; /* Use flexbox for layout */
+}
+
+.form-content {
+    margin-left: 240px; /* Leave space for the left navigation bar */
+    padding: 20px; /* Padding for the form */
+    flex-grow: 1; /* Allow content to grow */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Use flex for layout within form-content */
+}
+
+.image-upload {
+    flex: 1; /* Allow the image upload section to take up more space */
+    display: flex;
+    flex-direction: column; /* Stack the image upload vertically */
+    align-items: center; /* Center align content */
+}
+
+.image-upload input[type="file"] {
+    padding: 5px; /* Padding for file input */
+    border: 1px dashed #ccc; /* Dashed border for file input */
+    background-color: #f7f7f7; /* Light background for file input */
+    width: 80%; /* Adjust width for file input */
+}
+
+.product-details {
+    flex: 1; /* Allow the details section to take up space */
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    margin-left: 20px; /* Space between image upload and details */
+}
+
+h2 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack the form elements vertically */
+    width: 100%; /* Full width */
+}
+
+input, select {
+    margin: 10px; /* Space between input fields */
+    padding: 10px; /* Padding for inputs */
+    width: calc(100% - 20px); /* Full width minus margins */
+    max-width: 400px; /* Limit maximum width */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #f44336; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Space around buttons */
+    width: 200px; /* Fixed width for buttons */
+}
+
+button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+label {
+    margin: 10px; /* Space around labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    margin-top: 10px; /* Space above error message */
+    text-align: center; /* Center error message */
+}

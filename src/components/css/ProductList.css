@@ -1,0 +1,35 @@
+.home {
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+.product-list {
+    padding: 20px;
+}
+
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 15px; /* Space between grid items */
+}
+
+.grid-item {
+    border: 1px solid #ccc; /* Light border for items */
+    padding: 10px; /* Padding inside each item */
+    text-align: center; /* Centering text */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.grid-item img {
+    width: 100%; /* Make images full width of the container */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    margin-bottom: 10px; /* Space between image and text */
+}
